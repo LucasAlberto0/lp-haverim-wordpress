@@ -1,0 +1,978 @@
+
+/*
+Theme Name: LP Haverim WP
+Theme URI: http://lp-haverim-lucas-alberto.test/
+Author: Lucas Alberto
+Author URI: https://lucasalberto.site/
+Description: Tema para a replicar a LP da Haverim
+Version: 1.0.0
+*/
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,
+h5, h6, pre, form,p,blockquote {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.botao-whatsapp {
+    position: fixed;
+    bottom: 100px; 
+    left: 20px;  
+    width: 60px;  
+    height: 60px;
+    z-index: 1000; 
+}
+
+.botao-whatsapp img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Cabeçalho*/
+
+header {
+    background-color: #ededed;
+}
+
+.header-lg {
+    justify-items: center;
+}
+
+header nav {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
+}
+
+.header-lg ul li {
+    padding: 40px 30px;
+}
+
+header a {
+    text-decoration: none;
+    outline: none;
+    color: #838383;
+}
+
+header button {
+    background-color: #2ab349;
+    border-radius: 26px;
+    padding: 6px 0px;
+    text-align: center;
+    border: none;
+}
+
+header p {
+    padding: 0px;
+}
+
+
+/*Slider Principal*/
+
+.padrao-slider img {
+    width: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.sliderSection {
+    overflow: hidden;
+}
+
+.padrao-slider .img-slide-custom {
+    height: 679px;
+}
+
+
+.padrao-slider .padrao-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sliderSection {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.slide {
+    position: relative;
+}
+
+.imgSlide {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.descricao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slide button {
+    margin-top: 40px;
+    align-items: center;
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 35px;
+    border: 1px solid white;
+    padding: 20px 30px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.slide button img {
+    transition: filter 0.4s ease;
+}
+
+.slide button:hover {
+    background-color: white;
+    color: black;
+}
+
+.slide button:hover img {
+    filter: invert(1);
+}
+
+.slide h2 {
+    font-size: 48px;
+}
+
+.slide p{
+    font-size: 22px;
+}
+
+.nextSlidebtn{
+    right: 9% !important;
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 65px;         
+    height: 65px;
+    background-color: transparent;
+}
+
+.prevSlidebtn{
+    left: 9% !important;
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 65px;         
+    height: 65px;
+    background-color: transparent;
+}
+
+.prevSlidebtn,
+.nextSlidebtn {
+    transition: background-color 0.4s ease;
+}
+
+.prevSlidebtn img,
+.nextSlidebtn img {
+    transition: filter 0.4s ease;
+}
+
+.prevSlidebtn:hover,
+.nextSlidebtn:hover {
+    background-color: white;
+}
+
+.prevSlidebtn:hover img,
+.nextSlidebtn:hover img {
+    filter: invert(1);
+}
+
+/*Seçãozinha da parte principal da página*/
+
+.div-child-1{
+    background-color: #ff881c;
+    padding: 30px 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.div-child-2{
+    background-color: #ff912e;
+    padding: 30px 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.div-child-3{
+    background-color: #ff9f48;
+    padding: 30px 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.div-child-4{
+    background-color: #ffac60;
+    padding: 30px 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sectionOrange button{
+    display: block;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    width: 100%;
+    transition: background-color 0.4s ease;
+}
+
+.sectionOrange button:hover{
+    background-color: white;
+    color: #ff9f48;
+
+}
+
+.sectionOrange .row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.move-up {
+    position: relative;
+    transform: translateY(-50%);
+}
+
+/*Seção sobre a empresa */
+
+.aboutSection h2{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+    color:#82817f;
+}
+
+.aboutSection h2::before{
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #e87815;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    content: "";
+}
+
+.aboutSection p{
+    margin-bottom: 20px;
+    color: #a5a5a5;
+    text-align: center;
+}
+
+/*Segunda seção de slides*/
+
+.ndSlideSection{
+    text-align: center;
+}
+
+.ndSlideSection h2{
+    font-size: 32px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    color: #82817f;
+}
+
+.ndSlideSection h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #b5b5b5;
+}
+
+
+
+.ndSlideSection h2::before{
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #e87815;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    content: "";
+}
+
+.slick-dots {
+    display: flex !important;
+    bottom: -40px !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+    padding: 0;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50%;
+    background-color: transparent;         
+    border: 1px solid #999 !important;     
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;                
+}
+
+.imgSlide{}
+
+.slick-dots li.slick-active button {
+    background-color: #999;
+    border: 1px solid #999;
+}
+
+.slick-dots li button::before {
+    content: "";
+    display: none !important;
+}
+
+.divBeforeSlide:before {
+    position: absolute;
+    width: 207px;
+    height: 390px;
+    background-color: #cf9867;
+    opacity: 0.1;
+    left: 0;
+    margin-left: -10%;
+    bottom: -28px;
+    content: "";
+}
+
+.divBeforeSlide{
+    position: relative;
+}
+
+/*Seção de produtos*/
+
+
+.produtosSection{
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.produtosSection img{
+    width: 150px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.produtosSection p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #82817f;
+}
+
+.produtosSection .linhaDeProdutos{
+    text-align: center;
+}
+
+.produtosSection button{
+    margin-top: 100px;
+    background-color: #e87815;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 30px;
+    align-items: center;
+    border: none;
+}
+
+
+/*Formulário*/
+
+.full-column-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.full-column-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+.formSection {
+    margin-top: 100px;
+    padding-bottom: 90px;
+}
+
+.iconForms{
+    width: 24px;
+    height: 24px;
+}
+.formContent{
+    background-color: #fff7eb;
+}
+
+.formDiv{
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    max-width: 480px;
+    padding-bottom: 30px;
+    margin-left: 25px;
+}
+
+.formDiv h2{
+    color: #82817f;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px
+}
+
+.formText{
+    color: #b5b5b5;
+    font-size: 19px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.formDiv input, textarea{
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 7px 20px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    color: #82817f;
+}
+
+.formButtons button{
+    display: inline-block;
+    padding: 15px 25px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #dac29f;
+    color: #dac29f;
+    align-items: center;
+    background-color: transparent;    
+    transition: all .5s ease;
+}
+
+
+.formButtons button:hover {
+    transition: all .5s ease;
+}
+
+.formButtons button:hover {
+    background-color: #dac29f;
+    color: white;
+}
+
+.formButtons button:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.formSection input::placeholder,
+.formSection textarea::placeholder {
+    color: #b3b2b1; 
+}
+
+.formDiv textarea{
+    height: 150px;
+    resize: none;
+}
+
+.formText:before {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #e87815;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    content: "";
+}
+
+
+/*Seção de blog*/
+
+.blogSection h3{
+    color: #b5b5b5;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.blogSection h2{
+    font-size: 32px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 10px;
+    color: #82817f;
+    margin-bottom: 70px;
+}
+
+.blogSection h2:before {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #e87815;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    content: "";
+}
+
+.divsBlog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quadrado {
+    width: 5%;
+    height: 200px;
+    background-color: #b3c3c3;
+    opacity: 0.3;
+}
+
+.quadrado1 {
+    width: 16%;
+    height: 200px;
+    background-color: #b3c3c3;
+    opacity: 0.1;
+}
+
+.quadrado2 {
+    width: 26%;
+    position: relative;
+}
+
+.quadrado2 img {
+    width: 97%;
+    margin-left: 3%;
+    height: 190px;
+    object-fit: cover;
+}
+.divsBlog button {
+    background-color: #13b4ad80;
+    padding: 5px 20px;
+    border-radius: 21px;
+    border: none;
+    color: white !important;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+    width: 128px;
+    margin-right: auto;
+}
+
+
+.quadrado2 h3 {
+    color: #82817f;
+    font-size: 26px;
+    text-align: left;
+    margin: 20px 0 0 3%;
+}
+
+.quadrado2 p {
+    line-height: 22px;
+    text-align: left;
+    color: #82817f;
+    font-size: 16px;
+    margin: 15px 0 0 3%;
+}
+
+.quadrado2:before {
+    position: absolute;
+    width: 155px;
+    z-index: -1;
+    background-color: #f88c4d;
+    height: 200px;
+    left: 0;
+    content: "";
+}
+
+
+
+/*Seção Localização*/
+
+
+.localizacao {
+    padding: 120px 0 70px;
+    text-align: center;
+    color: white;
+    margin-bottom: 70px;
+    margin-top: 120px;
+}
+
+
+.localizacao button {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    align-items: center;    
+    margin: 50px 10px 0 10px;
+}
+
+.localizacao p{
+    margin-top: 20px;
+}
+
+.localizacao button img {
+    width: 20px;
+    height: 14px;
+    margin-left: 14px;
+}
+
+.localizacao button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+
+
+/*Rodapé*/
+
+
+.detalheFooter {
+    width: 80px;
+    height: 2px;
+    background-color: #e87815;
+}
+
+.logoCustom{
+    margin: 30px 0 50px;
+    position: relative;
+}
+
+footer {
+    color: #b3b3b3;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.dadosFooter a {
+    display: block;
+    color: #ff7329;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+.entreDados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.entreDados:nth-child(3) {
+    text-align: right;
+}
+
+.dadosFooter img {
+    margin: 30px 0 20px;
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+}
+
+.entreDados:nth-child(3) img {
+    margin-left: auto;
+}
+
+.footerBG{
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    font-size: 12px;
+}
+.listaFooter ul li{
+    font-size: 12px;
+}
+
+/*Responsividade*/
+
+
+#botaoMenu {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    right: 0;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+}
+
+#menuMobile {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        display: none;
+    }
+    .header-lg {
+        display: none;
+    }
+    .container {
+        width: 780px;
+    }
+
+    .quadrado2{
+        width: 32%;
+    }
+
+    .quadrado1{
+        display: none;
+    }
+    .formContent{
+        justify-content: center;
+    }
+    .formDiv{
+        margin-left: 0;
+    }
+
+    #botaoMenu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        text-align: right;
+        height: 45px;
+        transition: .5s all ease;
+        background-color: #ff881c;
+        z-index: 10001;
+    }
+
+    #botaoMenu span {
+        display: block;
+        height: 45px;
+        width: 45px;
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
+        background-color: #ff881c;
+        background: url('../assets/img/icons/navIcon.svg') center center no-repeat;
+    }
+    
+    #botaoMenu.aberto span {
+        background: url('../assets/img/icons/closeIcon.svg') center center no-repeat;
+        background-color: #ff881c;
+    }
+
+    nav#menuMobile {
+        display: block;
+        position: fixed;
+        top: 45px;
+        width: 100%;
+        background-color: #ff881c;
+        z-index: 9999;
+        text-align: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+
+    nav#menuMobile.aberto {
+        max-height: 40vh;
+    }
+
+    nav#menuMobile ul {
+        list-style: none;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    nav#menuMobile ul li {
+        margin: 15px 0;
+    }
+
+    nav#menuMobile ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 992px){
+    .container{
+        width: 690px;
+    }
+
+    .div-child-1, .div-child-2, 
+    .div-child-3, .div-child-4{
+        padding: 15px;
+    }   
+
+    .full-column-img {
+        position: relative;
+        
+    }
+    .quadrado{
+            display: none;
+        }
+    .divsBlog{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .quadrado2{
+        justify-content: center;
+        width: 100%;
+        max-width: 690px;
+    }
+    .iconForms{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 510px;
+    }
+    .move-up {
+        position: relative;
+        transform: translateY(-20%);
+    }
+    .prevSlidebtn{
+        display: none;
+    }
+    .nextSlidebtn{
+        display: none;
+    }
+    .divsBlog{
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .divBeforeSlide:before{
+        display: none;
+    }
+    .aboutSection{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 437px;
+    }
+    .formDiv{
+        max-width: 437px;
+    }
+    .padrao-slider .img-slide-custom {
+        height: 500px;
+    }
+    .botao-whatsapp {
+
+        bottom: 40px; 
+        left: 10px;  
+        width: 40px;  
+        height: 40px;
+    }
+}
+
+@media (max-width: 467px){
+    .container{
+        max-width: 330px;
+    }
+    .formDiv{
+        max-width: 340px;
+    }
+
+    .div-child-1, .div-child-2, 
+    .div-child-3, .div-child-4{
+        padding: 6px;
+    }  
+    .slide h2 {
+        font-size: 32px;
+    }
+    
+    .slide p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 380px){
+    .formDiv{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 360px){
+    .container{
+        max-width: 280px;
+    }
+    .formDiv{
+        max-width: 280px;
+    }
+}
