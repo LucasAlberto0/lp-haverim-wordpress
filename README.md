@@ -1,6 +1,4 @@
-# Desafio 1 Marcasite 2025
 
-Teste técnico para seguir na candidatura da trilha de desenvolvimento Front-End na Marcasite.
 
 Template da Haverim no Wordpress
 
